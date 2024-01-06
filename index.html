@@ -1,53 +1,60 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-	<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-		<title>Page1</title>
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
 
-	</head>
+        #menu a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
 
-	<body>
+        #menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-		<div id="$0">Click here to go to sz-games</div>
+        #content {
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
 
-		<script type="text/javascript">
+<body>
 
-"use strict";
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <!-- Add more menu items as needed -->
+    </div>
 
+    <div id="content">
+        <!-- Your custom HTML content goes here -->
+        <p>Your custom content here</p>
+    </div>
 
-
-(() => {
-
-document.getElementById("$0").onclick = (e) => {
-
-	e.preventDefault();
-
-	e.stopPropagation();
-
-	
-
-	const win = window.open(void 0, "_blank");
-
-	win.focus();
-
-	//win.stop();
-
-	
-
-	const doc = win.document;
-
-	doc.open();
-
-	doc.write('<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />\n\t\t<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />\n\t\t<meta http-equiv="Referrer-Policy" content="no-referrer" />\n\t\t<meta name="referrer" content="no-referrer" />\n\t\t<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />\n\t\t<base href="https://www.google.com/" />\n\t\t<link rel="icon" type="image/x-icon" href="favicon.ico" />\n\t\t<title>Google</title>\n\t\t<style type="text/css">\n* {\n\tmargin: 0px;\n\tpadding: 0px;\n}\n\nbody {\n\tposition: absolute;\n\tdisplay: block;\n\twidth: 100%;\n\theight: 100%;\n\toverflow: hidden;\n}\n\nembed, iframe {\n\tposition: absolute;\n\tdisplay: block;\n\twidth: 100%;\n\theight: 100%;\n\tborder: none;\n}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<embed type="text/plain" width="1024" height="768" src="https://sz-games.github.io" />\n\t\t\x3Cscript type="text/javascript">\n"use strict";\n\n(() => {\n\nwindow.onbeforeunload = window.onunload = (e) => {\n\te.preventDefault();\n\te.stopPropagation();\n\n\tconst msg = "\uD800";\n\te.returnValue = msg;\n\treturn msg;\n};\n\n})();\n\t\t\x3C/script>\n\t</body>\n</html>');
-
-	doc.close();
-
-};
-
-})();
-
-		</script>
-
-	</body>
+</body>
 
 </html>
