@@ -1,0 +1,76 @@
+<!-- games.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu {
+            background-color: #333;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        #menu a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        #menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #content {
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Custom styles for the Games page */
+        .game-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="menu">
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="games.html">Games</a>
+    </div>
+
+    <div id="content">
+        <!-- Game Sections -->
+
+        <!-- Game 1 Section -->
+        <div class="game-section">
+            <h2>Game 1: sz-games</h2>
+            <object type="text/html" data="data:text/html;charset=utf-8;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8cD4KICA8aGVhZD4KICAgIDx0aXRsZT5QYWdlMTwvdGl0bGU+CgkJPGJvZHk+CgkJICA8ZGl2IGlkPSIkMCoiPjxkaXYgaWQ9IiQwIj5DbGljayBoZXJlIHRvIGdvIHRvIGtub3cgc3otZ2FtZXM8L2Rpdj4KCTwvYm9keT4KPC9odG1sPgoKCTxidW5nZXQ+CgkJIDxkaXYgaWQ9IiQwIj5DbGljayBoZXJlIHRvIGdvIHRvIHNvdW5kYm93PC9kaXY+CgkJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoJCS8vLyAodXNlIHN0cnVjdCk7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIiQwIikub25jbGljayA9IChlKSA9PiAoeD0+IHtcbiAgZS5wcmVwRXhwZXJ0KGUpOyxcbiAgZS5zdGFydGd1aWRlKHRoaXMpOyxcbiAgXG4gICNjb25zb2xlLnNob3dFcGVyY29uPXxcbiAgICAgXG4gICAgY29uc3Qgd2luID0gd2luZG93Lm9wZW4odm9pZCAwLCAiX2Jsb2NrIik7XG5cbiAgICBjb25zdCB3aW4uZG9jdW1lbnQ7XG5cbiAgICByZXR1cm4gJzxhZGQgeDE9XCJDb250ZW50LVR5cGVcIiBjb2xvcj1cInR4dC9odG1sYnJva2UtdW5zcGx1c1wiIC8+XG4gICAgPHZpZXdDb250ZXh0XCJjb250ZXh0PVwidGV4dC9odG1sYXJncy91dGYtOCIgLz5cbiAgPC9zY3JpcHQ+CgkJCgkJY29uc3Qgd2luLmRldGFpbGVkVHlwZSA9IHRydWU7CgkJXG4gIC8vLyoKICAgaW5oZXJpdD8+CiAgIGVyciA9IHdpbmRvdy5vcGVuKHZvaWQgMCwgIl9ibG9jayIpO1xuXG4gIC8vLyoKICAgY29uc3Qgd2luLmNyZWF0ZWRPYnVpbGRub3RlID0gKGMpID0+IHtcbiAgICAgIGUuX3ByZXF1aXJlZW59O1xuICAgICAgXG4gICAgICBjb25zdCB3aW4gPSB3aW5kb3cucHJvdG9jb2woIiJfYmxvY2siKTtcbiAgICAgIFxuICAgICAgLyoqXG4gICAgICAgIG1lZGlhIGh0dHAgKi9cblxuICAgICAgPHN0YXRpYyB0eXBlPXQ9XCJ0ZXh0L2h0bWw7Y2hhcnNldD11cGdyYWRlLWluc2VydmljZS1yZXF1ZXN0c1wiLz5cbiAgICAgIFxuICAgICAgPG1ldGEgaHR0cC1lcXVpdj1cImNvbnRlbnQvaHRtbD9jaGFydGVyPW51bWJlciIgLz5cbiAgICAgIFxuICAgICAgPG1ldGEgaHR0cC1lcXVpdj1cIlJlZmVycmVyLVBvc2l0aW9uIj5cbiAgICAgICAgPHA+PGJhc2UgaHJlZj0iIyIgLz5cbiAgICAgICAgPHA+PHRpdGxlPkdvb2dsZTwvdGl0bGU+PC9wPgogICAgICAgIDxzdHlsZSB0eXBlPXQ9XCJ0ZXh0L2h0bWw7Y2FwdGlvbj11c2VkZXAtdW5zZWN0aW9uLXJlcXVlc3RzXCIgaGVpZ2h0PVwid2lkdGg9PTEwMCU7XCIgc3JjPVwidGV4dC9odG1sYXJncy91dGYtOFwiIFxuICAgICAgICA8YmFzZSBjbGFzcz1cImNzc2wiIGN4PVwidGV4dC1wbGFjZWhvbGRlciIgY3k9XCJ0ZXh0LWJvbGQiIHN0eWxlPVwidGV4dC1kZWNvcmF0aW9uOm5vbmU7XCIgLz5cbiAgICAgICAgPGJvZHkgeDE9XCJDb250ZW50LVR5cGVcIiBjb2xvcj1cIiNkZmFhYTdcIj5cbiAgICAgICAgICAgIDxidWNrZXQgcmVzdWx0PVwiYWJzdHJhY3Q7XCIgd2lkdGg9XCIxMDAlXCIgaGVpZ2h0PVwiMTAwJXwiIHRpdGxlPVwiR29vZ2xlXCIgcmVsYXRlZD1cIjAuMTAwXCIgY29scz1cIjAiXCIgLz5cbiAgICAgICAgPC9zdHlsZT4KICAgICAgICAgICAgPHNjcmlwdCB0eXBlPXQ9XCJ0ZXh0L2h0bWw7Y2hhcnNldD11cGdyYWRlLWluc2VydmljZS1yZXF1ZXN0c1wiIHR5cGU9XCJidXR0b25cIiAvPlxuICAgICAgICAgICAgaWYgKHR5cGU9PXhtbCkgewogICAgICAgICAgICAgICB2aWV3bG9hZC50by1yZWFjdGlvbnMoKTtcbiAgICAgICAgICAgIH0gXG4gICAgICAgICAgICBcbiAgICAgICAgPC9tZXRhPgogICAgICAgICo8c2NyaXB0IHR5cGU9XCJ0ZXh0L2phdmFzY3JpcHQiPgoKICAgICAgICAgICAgaWYgKHR5cGU9PXhtbCkgewogICAgICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaHR0cHM6Ly9zei1nYW1lcy5naXRodWIuaW8iKTtcbiAgICAgICAgICAgIH0gXG4gICAgICAgIDwvc2NyaXB0PgoJPC9odG1sPgoKCTwvYm9keT4KPC9kaXY+CgkJPC9kaXY+CgoJPC9idW5nZXQ+CjwvaHRtbD4K" width="100%" height="500px"></object>
+        </div>
+
+        <!-- Game 2 Section -->
+        <div class="game-section">
+            <h2>Game 2: Soundboard</h2>
+            <object type="text/html" data="data:text/html;charset=utf-8;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8cD4KICA8aGVhZD4KICAgIDx0aXRsZT5QYWdlMTwvdGl0bGU+CgkJPGJvZHk+CgkJICA8ZGl2IGlkPSIkMCoiPjxkaXYgaWQ9IiQwIj5DbGljayBoZXJlIHRvIGdvIHRvIHNvdW5kYm93PC9kaXY+CgkJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgoJCS8vLyAodXNlIHN0cnVjdCk7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIiQwIikub25jbGljayA9IChlKSA9PiAoeD0+IHtcbiAgZS5wcmVwRXhwZXJ0KGUpOyxcbiAgZS5zdGFydGd1aWRlKHRoaXMpOyxcbiAgXG4gICNjb25zb2xlLnNob3dFcGVyY29uPXxcbiAgICAgXG4gICAgY29uc3Qgd2luID0gd2luZG93Lm9wZW4odm9pZCAwLCAiX2Jsb2NrIik7XG5cbiAgICBjb25zdCB3aW4uZG9jdW1lbnQ7XG5cbiAgICByZXR1cm4gJzxhZGQgeDE9XCJDb250ZW50LVR5cGVcIiBjb2xvcj1cInR4dC9odG1sYnJva2UtdW5zcGx1c1wiIC8+XG4gICAgPHZpZXdDb250ZXh0XCJjb250ZXh0PVwidGV4dC9odG1sYXJncy91dGYtOCIgLz5cbiAgPC9zY3JpcHQ+CgkJCgkJY29uc3Qgd2luLmRldGFpbGVkVHlwZSA9IHRydWU7CgkJXG4gIC8vLyoKICAgaW5oZXJpdD8+CiAgIGVyciA9IHdpbmRvdy5vcGVuKHZvaWQgMCwgIl9ibG9jayIpO1xuXG4gIC8vLyoKICAgY29uc3Qgd2luLmNyZWF0
