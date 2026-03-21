@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root{--bg-1:#f3f4f6;--bg-2:#fff;--bg-3:#f9fafb;--txt-1:#111827;--txt-2:#4b5563;--txt-m:#9ca3af;--brd:#e5e7eb;--inp:#fff;--hvr:#f3f4f6}
+.dark{--bg-1:#0f172a;--bg-2:#1e293b;--bg-3:#334155;--txt-1:#f1f5f9;--txt-2:#cbd5e1;--txt-m:#64748b;--brd:#475569;--inp:#334155;--hvr:#475569}
+body{background:var(--bg-1);color:var(--txt-1);transition:all .3s}
+.card{background:var(--bg-2);border-color:var(--brd)}
+.inp{background:var(--inp);border-color:var(--brd);color:var(--txt-1)}
+.inp::placeholder{color:var(--txt-m)}
+.tbl-wrap{overflow:auto;max-height:calc(100vh - 280px)}
+.tbl-wrap::-webkit-scrollbar{width:8px;height:8px}
+.tbl-wrap::-webkit-scrollbar-track{background:var(--bg-3);border-radius:4px}
+.tbl-wrap::-webkit-scrollbar-thumb{background:var(--txt-m);border-radius:4px}
+.cell-inp{min-width:70px;background:transparent;color:var(--txt-1)}
+.sel-row{background:rgba(59,130,246,.15)!important}
+.sel-col{background:rgba(34,197,94,.15)!important}
+.hl-match{background:rgba(234,179,8,.3)!important}
+.hdr{position:sticky;top:0;z-index:10;background:var(--bg-3)}
+.frz{position:sticky;left:0;z-index:5;background:var(--bg-2)}
+.frz-hdr{z-index:15!important}
+.toast{animation:slideIn .3s,fadeOut .3s 2.7s forwards}
+@keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes fadeOut{from{opacity:1}to{opacity:0}}
+.tab-active{background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff}
+.view-active{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;box-shadow:0 4px 12px rgba(99,102,241,.3)}
+.bal-prev{max-height:300px;overflow-y:auto}
+.ctx-menu{position:fixed;background:var(--bg-2);border:1px solid var(--brd);box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);border-radius:0.5rem;padding:0.25rem;z-index:50;min-width:160px}
+.ctx-item{display:flex;align-items:center;width:100%;padding:0.375rem 0.75rem;font-size:0.875rem;color:var(--txt-1);border-radius:0.25rem;cursor:pointer}
+.ctx-item:hover{background:var(--hvr)}
+.ctx-sep{height:1px;background:var(--brd);margin:0.25rem 0}
+.sel-area{background:rgba(59,130,246,0.1);border:1px double rgba(59,130,246,0.5)}
+.resizer{position:absolute;right:0;top:0;bottom:0;width:4px;cursor:col-resize;z-index:10}
+.resizer:hover{background:rgba(59,130,246,0.5)}
